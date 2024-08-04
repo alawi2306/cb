@@ -4,22 +4,25 @@
 <--- -------------------------- -*/
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
-  :root {
-    --primary: #f36f6f; /* Bright Coral */
-    --primaryLight: #f9a5a5; /* Light Coral */
-    --secondary: #4b9cd3; /* Sky Blue */
-    --secondaryLight: #a4d8f0; /* Light Sky Blue */
-    --headerColor: #3c3c3c; /* Dark Charcoal */
-    --bodyTextColor: #333333; /* Dark Grey */
-    --bodyTextColorWhite: #f0f0f0; /* Very Light Grey */
-    /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-  }
+/* Globals.css, which provides global fonts, colours and styles */
+
+/* Optionally, you can use preconnect for better performance */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary: #2e8b57;        /* Sea Green */
+  --primaryLight: #3cb371;   /* Medium Sea Green */
+  --secondary: #8fbc8f;      /* Dark Sea Green */
+  --secondaryLight: #98fb98; /* Pale Green */
+  --headerColor: #006400;    /* Dark Green */
+  --bodyTextColor: #228b22;  /* Forest Green */
+  --bodyTextColorWhite: #ffffff; /* White */
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
 
   .cs-topper {
     display: block;
