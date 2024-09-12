@@ -5,12 +5,12 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #2e8b57; /* Sea Green */
-    --primaryLight: #3cb371; /* Medium Sea Green */
-    --secondary: #8fbc8f; /* Dark Sea Green */
-    --secondaryLight: #98fb98; /* Pale Green */
-    --headerColor: #006400; /* Dark Green */
-    --bodyTextColor: #228b22; /* Forest Green */
+    --primary: #f39c12; /* Construction Yellow/Orange */
+    --primaryLight: #f7b731; /* Lighter Construction Yellow */
+    --secondary: #34495e; /* Dark Slate Blue */
+    --secondaryLight: #5d6d7e; /* Lighter Slate Blue */
+    --headerColor: #2c3e50; /* Dark Blue-Grey */
+    --bodyTextColor: #2f3640; /* Dark Grey */
     --bodyTextColorWhite: #ffffff; /* White */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
@@ -59,13 +59,13 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
-    color: #000;
+    color: #ffffff;
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
   }
   .cs-button-solid:hover {
-    color: #fff;
+    color: #000;
   }
   .cs-button-solid:hover:before {
     width: 100%;
@@ -193,6 +193,7 @@
     font-size: 0.55vw;
   }
 }
+
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
 <--- -------------------------- -*/

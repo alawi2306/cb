@@ -1,305 +1,1633 @@
 ---
-title: '[insert company name] | Transforming Outdoor Spaces | Brentwood, UK'
-description: 'Transform your outdoor spaces with [insert company name]. Offering exceptional landscaping services in Brentwood, UK, with a focus on high-quality garden design, lawn care, and more.'
-preloadImg: '/assets/images/landing.jpg'
-permalink: '/'
-tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
+title: "[insert company name] | Transforming Outdoor Spaces | Brentwood, UK"
+description: "Transform your outdoor spaces with [insert company name]. Offering exceptional landscaping services in Brentwood, UK, with a focus on high-quality garden design, lawn care, and more."
+preloadImg: "/assets/images/landing.jpg"
+permalink: "/"
+tags: "sitemap" # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
   key: Home
   order: 100
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/home.css?v=1.1" />
+<link rel="stylesheet" href="/assets/css/critical.css?v=1.1" />
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/home.css?v=1.1"/>
-    <link rel="stylesheet" href="/assets/css/critical.css?v=1.1"/>
+<!-- Script for Netlify Identity -->
+<script
+  defer
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{% endblock %} {% block body %}
 
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
-{% endblock %}
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-{% block body %}
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<section id="hero-1949">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h1 class="cs-title">Building Your Home Accommodation</h1>
+      <p class="cs-text">
+        We successfully cope with tasks of varying complexity, provide long-term
+        guarantees and regularly master new technologies.
+      </p>
+      <a href="" class="cs-button-solid">Read More</a>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <h3 class="cs-h3">Construction</h3>
+        <p class="cs-item-text">
+          Designing and Building The Most Beautiful Custom Homes.
+        </p>
+      </li>
+      <li class="cs-item">
+        <h3 class="cs-h3">Project Development</h3>
+        <p class="cs-item-text">
+          Designing and Building The Most Beautiful Custom Homes.
+        </p>
+      </li>
+      <li class="cs-item">
+        <h3 class="cs-h3">Interior Design</h3>
+        <p class="cs-item-text">
+          Designing and Building The Most Beautiful Custom Homes.
+        </p>
+      </li>
+      <li class="cs-item">
+        <h3 class="cs-h3">Architecture</h3>
+        <p class="cs-item-text">
+          Designing and Building The Most Beautiful Custom Homes.
+        </p>
+      </li>
+    </ul>
+  </div>
 
-    <section id="hero-446">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-tag">Transforming Spaces</span>
-                <h1 class="cs-title">Exceptional Landscaping Services</h1>
-                <p class="cs-text">
-                    At [insert company name], we specialize in creating stunning outdoor spaces that enhance your property. Our dedicated team in [insert location], is committed to providing outstanding landscaping solutions tailored to your unique needs.
-                </p>
-            </div>
-            <!--Stats Section-->
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <span class="cs-number">15+</span>
-                    <span class="cs-desc">Years of Experience in Landscaping</span>
-                </li>
-                <li class="cs-item">
-                    <span class="cs-number">500+</span>
-                    <span class="cs-desc">Successful Projects Completed</span>
-                </li>
-                <li class="cs-item">
-                    <span class="cs-number">98%</span>
-                    <span class="cs-desc">Client Satisfaction Rate</span>
-                </li>
-            </ul>
-        </div>
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/leaf-bg-m.jpg">
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/leaf-bg.jpg">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/leaf-bg.jpg" alt="Beautiful landscape" width="1920" height="1000" aria-hidden="true">
+  <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/architect.jpeg
+      "
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/architect.jpeg
+      "
+    />
+    <img
+      decoding="async"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/architect.jpeg"
+      alt="architect"
+      width="2250"
+      height="1500"
+      aria-hidden="true"
+    />
+  </picture>
+</section>
+
+<section id="services-1251">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex-group">
+        <span class="cs-topper">Our Services</span>
+        <h2 class="cs-title">Professional Construction Services</h2>
+      </div>
+      <p class="cs-text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Amet minim mollit
+        non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+        consequat duis enim velit mollit.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <h3 class="cs-h3">Sustainable System</h3>
+          <p class="cs-item-text">
+            We’ve helped thousands of organizations transform to become relevant
+            of helped thousands.
+          </p>
+        </a>
+        <picture class="cs-item-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure1.jpeg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure1.jpeg
+            "
+          />
+          <img
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure1.jpeg"
+            alt="construction"
+            width="413"
+            height="374"
+            aria-hidden="true"
+          />
         </picture>
-    </section>
-    
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
-    <section id="sbs-418">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">What We Offer</span>
-                <h2 class="cs-title">Professional Landscaping Services</h2>
-                <p class="cs-text">
-                    Our landscaping services encompass everything from garden design to ongoing maintenance. We strive to ensure your outdoor space is not only visually appealing but also functional and easy to maintain.
-                </p>
-                <div class="cs-button-group">
-                    <a href="services.html" class="cs-button-solid">Learn More</a>
-                    <a href="contact.html" class="cs-button-transparent">Get In Touch</a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <h3 class="cs-h3">Honest Services</h3>
+          <p class="cs-item-text">
+            We’ve helped thousands of organizations transform to become relevant
+            of helped thousands.
+          </p>
+        </a>
+        <picture class="cs-item-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure2.jpg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure2.jpg
+            "
+          />
+          <img
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure2.jpg"
+            alt="construction"
+            width="413"
+            height="374"
+            aria-hidden="true"
+          />
+        </picture>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <h3 class="cs-h3">Remodeling Expert</h3>
+          <p class="cs-item-text">
+            We’ve helped thousands of organizations transform to become relevant
+            of helped thousands.
+          </p>
+        </a>
+        <picture class="cs-item-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure3.jpg
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure3.jpg
+            "
+          />
+          <img
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/structure3.jpg"
+            alt="construction"
+            width="413"
+            height="374"
+            aria-hidden="true"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+{% include 'components/about.html' %}
+
+<!-- ============================================ -->
+<!--            Extra Content To Rank             -->
+<!-- ============================================ -->
+<section id="meet-team-1284">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex-group">
+        <span class="cs-topper">Meet The Team</span>
+        <h2 class="cs-title">Meet Our Team</h2>
+      </div>
+      <p class="cs-text">
+        We can help you design your project and develop a comprehensive plan to
+        ensure that it meets your specific needs and requirements. Our team of
+        architects and engineers will work closely with you to create a design
+        that is both functional and aesthetically pleasing.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/contractor-1.png"
+            alt="portrait"
+            width="275"
+            height="132"
+          />
+        </picture>
+        <span class="cs-name">Oscar Chavez</span>
+        <span class="cs-job-title">Project Engineer</span>
+        <!-- Social Flexbox -->
+        <div class="cs-social">
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram1a.svg"
+              alt="instagram"
+              width="15"
+              height="13"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Linked in"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter1a.svg"
+              alt="twitter"
+              width="17"
+              height="16"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin1a.svg"
+              alt="linkedin"
+              width="15"
+              height="13"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Linked in"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook1a.svg"
+              alt="facebook"
+              width="17"
+              height="16"
+            />
+          </a>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/contractor-2.png"
+            alt="portrait"
+            width="275"
+            height="132"
+          />
+        </picture>
+        <span class="cs-name">Pansy Dixon</span>
+        <span class="cs-job-title">Civil Engineer</span>
+        <!-- Social Flexbox -->
+        <div class="cs-social">
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram1a.svg"
+              alt="instagram"
+              width="15"
+              height="13"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Linked in"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter1a.svg"
+              alt="twitter"
+              width="17"
+              height="16"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin1a.svg"
+              alt="linkedin"
+              width="15"
+              height="13"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Linked in"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook1a.svg"
+              alt="facebook"
+              width="17"
+              height="16"
+            />
+          </a>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/contractor-3.png"
+            alt="portrait"
+            width="275"
+            height="132"
+          />
+        </picture>
+        <span class="cs-name">Kayla Ortega</span>
+        <span class="cs-job-title">Site Supervisor</span>
+        <!-- Social Flexbox -->
+        <div class="cs-social">
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram1a.svg"
+              alt="instagram"
+              width="15"
+              height="13"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Linked in"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter1a.svg"
+              alt="twitter"
+              width="17"
+              height="16"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin1a.svg"
+              alt="linkedin"
+              width="15"
+              height="13"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Linked in"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook1a.svg"
+              alt="facebook"
+              width="17"
+              height="16"
+            />
+          </a>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/contractor-1.png"
+            alt="portrait"
+            width="275"
+            height="132"
+          />
+        </picture>
+        <span class="cs-name">Oscar Chavez</span>
+        <span class="cs-job-title">Project Engineer</span>
+        <!-- Social Flexbox -->
+        <div class="cs-social">
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram1a.svg"
+              alt="instagram"
+              width="15"
+              height="13"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Linked in"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter1a.svg"
+              alt="twitter"
+              width="17"
+              height="16"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin1a.svg"
+              alt="linkedin"
+              width="15"
+              height="13"
+            />
+          </a>
+          <a
+            href=""
+            class="cs-link"
+            aria-label="Linked in"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook1a.svg"
+              alt="facebook"
+              width="17"
+              height="16"
+            />
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="pricing-1262">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Pricing</span>
+      <h2 class="cs-title">
+        Transparent Pricing Options for Your Construction Project
+      </h2>
+      <p class="cs-text">
+        Our We believe in transparency when it comes to pricing for your
+        construction project. We offer three different packages to meet your
+        specific needs and budget,
+      </p>
+      <div class="cs-toggle-group">
+        <span id="cs-option1-1262" class="cs-plan">Pay Annually</span>
+        <div class="cs-toggle" aria-label="click to switch plans pricing">
+          <span aria-hidden="true" class="cs-toggle-switch"></span>
+        </div>
+        <span id="cs-option2-1262" class="cs-plan">Pay Monthly</span>
+      </div>
+    </div>
+    <div class="cs-ul-wrapper">
+      <ul class="cs-card-group cs-option1">
+        <li class="cs-item">
+          <span class="cs-popular-tag">Recommended</span>
+          <picture class="cs-picture">
+            <section id="meet-team-1284">
+              <div class="cs-container">
+                <div class="cs-content">
+                  <div class="cs-flex-group">
+                    <span class="cs-topper">Meet The Team</span>
+                    <h2 class="cs-title">Meet Our Team</h2>
+                  </div>
+                  <p class="cs-text">
+                    We can help you design your project and develop a
+                    comprehensive plan to ensure that it meets your specific
+                    needs and requirements. Our team of architects and engineers
+                    will work closely with you to create a design that is both
+                    functional and aesthetically pleasing.
+                  </p>
                 </div>
-            </div>
-            <div class="cs-image-group">
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/yard-m.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/yard.jpg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/yard.jpg" alt="Landscaping services" width="558" height="496">
-                </picture>
-                <!--Info Box-->
-                <div class="cs-info">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/tree.svg" alt="Tree Icon" width="48" height="48">
-                    <div class="cs-flex">
-                        <span class="cs-header">Custom Design</span>
-                        <span class="cs-desc">Tailored to Your Space</span>
+                <ul class="cs-card-group">
+                  <li class="cs-item">
+                    <picture class="cs-picture">
+                      <img
+                        aria-hidden="true"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/contractor-1.png"
+                        alt="portrait"
+                        width="275"
+                        height="132"
+                      />
+                    </picture>
+                    <span class="cs-name">Oscar Chavez</span>
+                    <span class="cs-job-title">Project Engineer</span>
+                    <!-- Social Flexbox -->
+                    <div class="cs-social">
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram1a.svg"
+                          alt="instagram"
+                          width="15"
+                          height="13"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Linked in"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter1a.svg"
+                          alt="twitter"
+                          width="17"
+                          height="16"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin1a.svg"
+                          alt="linkedin"
+                          width="15"
+                          height="13"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Linked in"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook1a.svg"
+                          alt="facebook"
+                          width="17"
+                          height="16"
+                        />
+                      </a>
                     </div>
-                </div>
-                <!--Svg Green Trapezoid-->
-                <img class="cs-trapezoid" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/trapezoid.svg" alt="Decorative trapezoid" width="558" height="496">
-            </div>
-        </div>
-    </section>
-    
-    <section id="services-20">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Expertise</span>
-                <h2 class="cs-title">Our Services in Detail</h2>
-                <p class="cs-text">
-                    Discover the full range of our landscaping services. From crafting stunning gardens to optimizing outdoor living spaces, we offer comprehensive solutions to meet all your landscaping needs.
-                </p>
-            </div>
-             <ul class="cs-card-group">
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/pinwheel.svg" alt="Pinwheel icon" width="68" height="68" aria-hidden="true">
-                    <h3 class="cs-h3">Garden Design</h3>
-                    <p class="cs-item-text">
-                        Creating bespoke garden designs that reflect your vision and lifestyle. Our designs are crafted to inspire and enhance your outdoor experience.
-                    </p>
-                    <a aria-label="read more about Garden Design" href="services.html#garden-design" class="cs-link">Read More</a>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/leaf.svg" alt="Leaf icon" width="68" height="68" aria-hidden="true">
-                    <h3 class="cs-h3">Lawn Care</h3>
-                    <p class="cs-item-text">
-                        Keep your lawn lush and healthy with our comprehensive care services. We handle everything from mowing to fertilization and pest management.
-                    </p>
-                    <a aria-label="read more about Lawn Care" href="services.html#lawn-care" class="cs-link">Read More</a>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/bubble-wheel.svg" alt="Bubble wheel icon" width="68" height="68" aria-hidden="true">
-                    <h3 class="cs-h3">Hardscaping</h3>
-                    <p class="cs-item-text">
-                        Enhance your outdoor space with beautiful hardscaping features. We design and build patios, walkways, and retaining walls that complement your landscape.
-                    </p>
-                    <a aria-label="read more about Hardscaping" href="services.html#hardscaping" class="cs-link">Read More</a>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/pinwheel.svg" alt="Pinwheel icon" width="68" height="68" aria-hidden="true">
-                    <h3 class="cs-h3">Planting & Irrigation</h3>
-                    <p class="cs-item-text">
-                        From selecting the perfect plants to installing efficient irrigation systems, we ensure your garden flourishes throughout the seasons.
-                    </p>
-                    <a aria-label="read more about Planting & Irrigation" href="services.html#planting-irrigation" class="cs-link">Read More</a>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/leaf.svg" alt="Leaf icon" width="68" height="68" aria-hidden="true">
-                    <h3 class="cs-h3">Landscape Maintenance</h3>
-                    <p class="cs-item-text">
-                        Maintain the beauty of your outdoor space with our customized maintenance plans. We offer regular upkeep to keep your landscape looking its best.
-                    </p>
-                    <a aria-label="read more about Landscape Maintenance" href="services.html#landscape-maintenance" class="cs-link">Read More</a>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/bubble-wheel.svg" alt="Bubble wheel icon" width="68" height="68" aria-hidden="true">
-                    <h3 class="cs-h3">Outdoor Lighting</h3>
-                    <p class="cs-item-text">
-                        Illuminate your outdoor space with our custom lighting solutions. We create ambiance and enhance safety with expertly designed lighting features.
-                    </p>
-                    <a aria-label="read more about Outdoor Lighting" href="services.html#outdoor-lighting" class="cs-link">Read More</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-    {% include 'components/about.html' %}
-    
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-    
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-    {% include 'components/gallery.html' %}
-    
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-    
-    <section id="reviews-354">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Testimonials</span>
-                <h2 class="cs-title">Trusted by Hundreds of Clients</h2>
-                <p class="cs-text">
-                    Our clients rave about our work! Read some of the testimonials from homeowners and businesses who have benefited from our landscaping services.
-                </p>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="Quote icon" width="40" height="33">
-                    <p class="cs-review">
-                        [insert company name] transformed our backyard into a beautiful haven. Their attention to detail and dedication to quality were outstanding.
-                    </p>
-                    <span class="cs-name">Emily Johnson</span>
-                    <span class="cs-job">Homeowner, Brentwood</span>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="Quote icon" width="40" height="33">
-                    <p class="cs-review">
-                        Working with [insert company name] was a game-changer for our property. Their expertise and creativity made a huge impact on our outdoor space.
-                    </p>
-                    <span class="cs-name">Michael Smith</span>
-                    <span class="cs-job">Business Owner, Brentwood</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="faq-460">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">FAQ</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
-                <ul class="cs-faq-group">
-                    <!-- Active class added as default -->
-                    <li class="cs-faq-item active">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How much do your landscaping services cost?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            The cost of our landscaping services depends on the scope and complexity of your project. We offer various packages to fit different budgets. Contact us for a detailed quote.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What is included in your maintenance services?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Our maintenance services include regular upkeep, seasonal clean-ups, and pest management. We offer customized plans to meet your specific needs.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How long does it take to complete a landscaping project?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            The duration of a landscaping project varies based on its size and complexity. Typically, projects range from a few days to several weeks. We'll provide a timeline after discussing your requirements.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Do you offer garden design consultations?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Yes, we offer garden design consultations to help you plan and visualize your ideal outdoor space. Contact us to schedule a consultation.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Can you help with landscape lighting installation?
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Absolutely! We provide custom landscape lighting solutions to enhance your outdoor space's beauty and functionality. Get in touch for more details.
-                        </p>
-                    </li>
+                  </li>
+                  <li class="cs-item">
+                    <picture class="cs-picture">
+                      <img
+                        aria-hidden="true"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/contractor-2.png"
+                        alt="portrait"
+                        width="275"
+                        height="132"
+                      />
+                    </picture>
+                    <span class="cs-name">Pansy Dixon</span>
+                    <span class="cs-job-title">Civil Engineer</span>
+                    <!-- Social Flexbox -->
+                    <div class="cs-social">
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram1a.svg"
+                          alt="instagram"
+                          width="15"
+                          height="13"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Linked in"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter1a.svg"
+                          alt="twitter"
+                          width="17"
+                          height="16"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin1a.svg"
+                          alt="linkedin"
+                          width="15"
+                          height="13"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Linked in"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook1a.svg"
+                          alt="facebook"
+                          width="17"
+                          height="16"
+                        />
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cs-item">
+                    <picture class="cs-picture">
+                      <img
+                        aria-hidden="true"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/contractor-3.png"
+                        alt="portrait"
+                        width="275"
+                        height="132"
+                      />
+                    </picture>
+                    <span class="cs-name">Kayla Ortega</span>
+                    <span class="cs-job-title">Site Supervisor</span>
+                    <!-- Social Flexbox -->
+                    <div class="cs-social">
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram1a.svg"
+                          alt="instagram"
+                          width="15"
+                          height="13"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Linked in"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter1a.svg"
+                          alt="twitter"
+                          width="17"
+                          height="16"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin1a.svg"
+                          alt="linkedin"
+                          width="15"
+                          height="13"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Linked in"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook1a.svg"
+                          alt="facebook"
+                          width="17"
+                          height="16"
+                        />
+                      </a>
+                    </div>
+                  </li>
+                  <li class="cs-item">
+                    <picture class="cs-picture">
+                      <img
+                        aria-hidden="true"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Meet-Team/contractor-1.png"
+                        alt="portrait"
+                        width="275"
+                        height="132"
+                      />
+                    </picture>
+                    <span class="cs-name">Oscar Chavez</span>
+                    <span class="cs-job-title">Project Engineer</span>
+                    <!-- Social Flexbox -->
+                    <div class="cs-social">
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram1a.svg"
+                          alt="instagram"
+                          width="15"
+                          height="13"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Linked in"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter1a.svg"
+                          alt="twitter"
+                          width="17"
+                          height="16"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Twitter"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin1a.svg"
+                          alt="linkedin"
+                          width="15"
+                          height="13"
+                        />
+                      </a>
+                      <a
+                        href=""
+                        class="cs-link"
+                        aria-label="Linked in"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <img
+                          class="cs-icon"
+                          aria-hidden="true"
+                          loading="lazy"
+                          decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook1a.svg"
+                          alt="facebook"
+                          width="17"
+                          height="16"
+                        />
+                      </a>
+                    </div>
+                  </li>
                 </ul>
-            </div>
-            <div class="cs-image-group" aria-hidden="true">
-                <!--Trapezoid-->
-                <img class="cs-trapezoid" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/trapezoid.svg" alt="Graphic trapezoid" loading="lazy" decoding="async" width="303" height="248">
-                <!--Leaf Picture-->
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/FAQ/leaf-small.png">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/FAQ/leaf-small.png">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/FAQ/leaf-small.png" alt="Leaf" width="602" height="490">
-                </picture>
-            </div>
+              </div>
+            </section>
+            <img
+              class="cs-picture-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/walking.svg"
+              alt="checkmark"
+              width="44"
+              height="44"
+            />
+          </picture>
+          <span class="cs-package">Starter</span>
+          <span class="cs-price">
+            $49
+            <span class="cs-duration">/month</span>
+          </span>
+          <p class="cs-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            gravida, ex in commodo euismod, justo nisi bibendum libero,
+          </p>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+          </ul>
+          <a href="" class="cs-button-transparent">Book Appointment</a>
+        </li>
+        <li class="cs-item cs-popular">
+          <span class="cs-popular-tag">Recommended</span>
+          <picture class="cs-picture">
+            <img
+              class="cs-picture-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/badge.svg"
+              alt="checkmark"
+              width="44"
+              height="44"
+            />
+          </picture>
+          <span class="cs-package">Starter</span>
+          <span class="cs-price">
+            $19
+            <span class="cs-duration">/month</span>
+          </span>
+          <p class="cs-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            gravida, ex in commodo euismod, justo nisi bibendum libero,
+          </p>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+          </ul>
+          <a href="" class="cs-button-transparent">Book Appointment</a>
+        </li>
+      </ul>
+      <ul class="cs-card-group cs-option2">
+        <li class="cs-item cs-popular">
+          <span class="cs-popular-tag">Recommended</span>
+          <picture class="cs-picture">
+            <img
+              class="cs-picture-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/walking.svg"
+              alt="checkmark"
+              width="44"
+              height="44"
+            />
+          </picture>
+          <span class="cs-package">Starter</span>
+          <span class="cs-price">
+            $79
+            <span class="cs-duration">/month</span>
+          </span>
+          <p class="cs-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            gravida, ex in commodo euismod, justo nisi bibendum libero,
+          </p>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+          </ul>
+          <a href="" class="cs-button-transparent">Book Appointment</a>
+        </li>
+        <li class="cs-item">
+          <span class="cs-popular-tag">Recommended</span>
+          <picture class="cs-picture">
+            <img
+              class="cs-picture-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/badge.svg"
+              alt="checkmark"
+              width="44"
+              height="44"
+            />
+          </picture>
+          <span class="cs-package">Starter</span>
+          <span class="cs-price">
+            $30
+            <span class="cs-duration">/month</span>
+          </span>
+          <p class="cs-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            gravida, ex in commodo euismod, justo nisi bibendum libero,
+          </p>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+            <li class="cs-li">
+              <img
+                class="cs-icon"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/round-check.svg"
+                alt="checkmark"
+                width="18"
+                height="18"
+              />
+              Praesent feugiat sem mattis.
+            </li>
+          </ul>
+          <a href="" class="cs-button-transparent">Book Appointment</a>
+        </li>
+      </ul>
+    </div>
+    <picture class="cs-waves-wrapper">
+      <img
+        class="cs-waves"
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/svg-waves.svg"
+        alt="waves"
+        width="743"
+        height="708"
+      />
+    </picture>
+  </div>
+</section>
+
+<section id="reviews-67">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Reviews</span>
+      <h2 class="cs-title">Words From Our Customers</h2>
+      <p class="cs-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor
+        volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida
+        viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo,
+        ornare. Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-text">
+          Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
+          habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
+          ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat
+          viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum
+          dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
+        </p>
+        <div class="cs-info">
+          <div class="cs-flex-group">
+            <span class="cs-name">Jon Doe</span>
+            <span class="cs-desc">Homeowner</span>
+          </div>
+          <img
+            class="cs-item-stars"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+            alt="stars"
+            width="96"
+            height="16"
+          />
         </div>
-    </section>
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img
+          class="cs-item-img"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+          alt="profile picture"
+          width="80"
+          height="80"
+        />
+        <p class="cs-item-text">
+          Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
+          habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
+          ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat
+          viverra massa urna, volutpat orci imperdiet eget eget.
+        </p>
+        <div class="cs-info">
+          <div class="cs-flex-group">
+            <span class="cs-name">Jon Doe</span>
+            <span class="cs-desc">Homeowner</span>
+          </div>
+          <img
+            class="cs-item-stars"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+            alt="stars"
+            width="96"
+            height="16"
+          />
+        </div>
+      </li>
+    </ul>
+    <a aria-label="read more reviews" href="" class="cs-button-solid"
+      >Read More</a
+    >
+  </div>
+</section>
 
-    <script>
-        const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-        for (const item of faqItems) {
-            const onClick = () => {
-                item.classList.toggle('active');
-            };
-            item.addEventListener('click', onClick);
-        }
-    </script>
+{% include 'components/gallery.html' %}
 
-    {% include 'components/cta.html' %}
-{% endblock %}
+<section id="faq-1237">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Common Questions</span>
+      <h2 class="cs-title">
+        Frequently Asked Questions About Our Construction Services
+      </h2>
+    </div>
+    <div class="cs-wrapper">
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <span class="cs-number">1</span>
+            <span class="cs-button-text">
+              What types of construction projects do you handle?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We handle a wide range of construction projects, including
+            residential homes, commercial buildings, industrial facilities, and
+            infrastructure projects. Our team has extensive experience in new
+            constructions, renovations, and expansions.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-number">2</span>
+            <span class="cs-button-text">
+              How do you ensure project timelines are met?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We use advanced project management software and techniques to track
+            progress, coordinate subcontractors, and manage resources
+            efficiently. Our experienced project managers closely monitor each
+            phase of construction to ensure timely completion while maintaining
+            high quality standards.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-number">3</span>
+            <span class="cs-button-text">
+              What safety measures do you implement on construction sites?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Safety is our top priority. We implement comprehensive safety
+            protocols, conduct regular safety training for all personnel, use
+            proper protective equipment, and comply with all OSHA regulations.
+            Our sites are regularly inspected to ensure adherence to safety
+            standards.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-number">4</span>
+            <span class="cs-button-text">
+              How do you handle changes or modifications during the construction
+              process?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We understand that changes can occur during construction. We have a
+            robust change order process in place to document, evaluate, and
+            implement modifications while considering their impact on timeline
+            and budget. We communicate transparently with clients throughout
+            this process.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-number">5</span>
+            <span class="cs-button-text">
+              What warranties do you offer on your construction work?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We stand behind the quality of our work. We offer a standard
+            one-year warranty on all our construction projects, covering
+            workmanship and materials. Extended warranties are available for
+            specific components or systems upon request.
+          </p>
+        </li>
+      </ul>
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <span class="cs-number">6</span>
+            <span class="cs-button-text">
+              How do you handle project budgeting and cost control?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We provide detailed cost estimates upfront and use sophisticated
+            cost tracking systems throughout the project. Our team continuously
+            monitors expenses, identifies potential cost savings, and provides
+            regular financial updates to ensure the project stays within budget.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-number">7</span>
+            <span class="cs-button-text">
+              What green building practices do you incorporate?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We are committed to sustainable construction. We incorporate
+            energy-efficient designs, use eco-friendly materials when possible,
+            implement proper waste management practices, and can assist in
+            obtaining LEED certification for projects aiming for green building
+            standards.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-number">8</span>
+            <span class="cs-button-text">
+              How do you ensure quality control in your projects?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Quality control is integral to our process. We have dedicated
+            quality assurance personnel who conduct regular inspections, perform
+            material testing, and ensure all work meets or exceeds industry
+            standards and local building codes. We also work closely with
+            third-party inspectors when required.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-number">9</span>
+            <span class="cs-button-text">
+              What is your policy on subcontractors?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We carefully vet and select subcontractors based on their expertise,
+            reliability, and past performance. All subcontractors are required
+            to adhere to our quality and safety standards. We maintain strong
+            relationships with our subcontractors to ensure consistent
+            high-quality work across all our projects.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-number">10</span>
+            <span class="cs-button-text">
+              How do you handle post-construction support and maintenance?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We provide comprehensive post-construction support, including a
+            detailed walkthrough of the completed project, operations and
+            maintenance manuals, and prompt response to any issues that may
+            arise. We also offer ongoing maintenance services to keep your
+            property in optimal condition.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+  const faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
+  for (const item of faqItems) {
+    const onClick = () => {
+      item.classList.toggle("active");
+    };
+    item.addEventListener("click", onClick);
+  }
+
+  // add classes for mobile navigation toggling
+  var CSbody = document.querySelector("body");
+  const CSnavbarMenu = document.querySelector("#cs-navigation");
+  const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
+
+  CShamburgerMenu.addEventListener("click", function () {
+    CShamburgerMenu.classList.toggle("cs-active");
+    CSnavbarMenu.classList.toggle("cs-active");
+    CSbody.classList.toggle("cs-open");
+    // run the function to check the aria-expanded value
+    ariaExpanded();
+  });
+
+  // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
+  function ariaExpanded() {
+    const csUL = document.querySelector("#cs-expanded");
+    const csExpanded = csUL.getAttribute("aria-expanded");
+
+    if (csExpanded === "false") {
+      csUL.setAttribute("aria-expanded", "true");
+    } else {
+      csUL.setAttribute("aria-expanded", "false");
+    }
+  }
+
+  // mobile nav toggle code
+  const dropDowns = Array.from(
+    document.querySelectorAll("#cs-navigation .cs-dropdown")
+  );
+  for (const item of dropDowns) {
+    const onClick = () => {
+      item.classList.toggle("cs-active");
+    };
+    item.addEventListener("click", onClick);
+  }
+
+  // after scrolling down 100px, add .scroll class to the #cs-navigation
+  document.addEventListener("scroll", (e) => {
+    const scroll = document.documentElement.scrollTop;
+    if (scroll >= 100) {
+      document.querySelector("#cs-navigation").classList.add("scroll");
+    } else {
+      document.querySelector("#cs-navigation").classList.remove("scroll");
+    }
+  });
+
+  const leftOption = document.querySelector("#pricing-1262 #cs-option1-1262");
+  const rightOption = document.querySelector("#pricing-1262 #cs-option2-1262");
+  const toggle = document.querySelector("#pricing-1262 .cs-toggle");
+  const cardGroup = Array.from(
+    document.querySelectorAll("#pricing-1262 .cs-ul-wrapper")
+  );
+  // when you click the middle toggle
+  toggle.addEventListener("click", (e) => {
+    for (const item of cardGroup) {
+      item.classList.toggle("cs-active");
+    }
+    toggle.classList.toggle("active");
+  });
+  // when you click the left button option
+  leftOption.addEventListener("click", (e) => {
+    for (const item of cardGroup) {
+      item.classList.remove("cs-active");
+    }
+    toggle.classList.remove("active");
+  });
+  // when you click the right button option
+  rightOption.addEventListener("click", (e) => {
+    for (const item of cardGroup) {
+      item.classList.add("cs-active");
+    }
+    toggle.classList.add("active");
+  });
+</script>
+
+{% include 'components/cta.html' %} {% endblock %}

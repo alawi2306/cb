@@ -1,22 +1,109 @@
-<!-- ============================================ -->
-<!--                    CTA                       -->
-<!-- ============================================ -->
-
-<section id="cta-96">
-    <!-- Need this to create a stage for the stripes, and use overflow: hidden on
-            this container so the stripes don't overlap the sections above and below #cta -->
-    <div aria-hidden="true" class="cs-stripes"></div>
+<section id="contact-1270">
     <div class="cs-container">
-        <!-- Left Section -->
+      <div class="cs-form-group">
+        <h3 class="cs-h3">
+          <picture class="cs-picture">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/clipboard-orange.svg"
+              alt="clipboard"
+              width="32"
+              height="32"
+            />
+          </picture>
+          We are thrilled to hear from you and learn about your project needs.
+        </h3>
+        <!--Form-->
+        <form
+          class="cs-form"
+          id="cs-form-1270"
+          name="Contact Form"
+          method="post"
+        >
+          <label class="cs-label">
+            Name
+            <input
+              class="cs-input"
+              required
+              type="text"
+              id="name-1270"
+              name="name"
+              placeholder="Name"
+            />
+          </label>
+          <label class="cs-label cs-email">
+            Email
+            <input
+              class="cs-input"
+              required
+              type="email"
+              id="email-1270"
+              name="email"
+              placeholder="Email"
+            />
+          </label>
+          <label class="cs-label cs-phone">
+            Phone
+            <input
+              class="cs-input"
+              required
+              type="phone"
+              id="phone-1270"
+              name="phone"
+              placeholder="Phone"
+            />
+          </label>
+          <label class="cs-label">
+            Message
+            <textarea
+              class="cs-input cs-textarea"
+              required
+              name="Message"
+              id="message-1270"
+              placeholder="Write message..."
+            ></textarea>
+          </label>
+          <button class="cs-button-solid cs-submit" type="submit">
+            Make an Appointment
+          </button>
+        </form>
+      </div>
+      <div class="cs-wrapper">
         <div class="cs-content">
-            <span class="cs-topper">Contact us</span>
-            <h2 class="cs-title">Ready To Get Started?</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas adipiscing nulla suspendisse bibendum arcu diam, pellentesque lorem. Amet hac et sed rhoncus magna. Nisl neque ut varius volutpat morbi.
-            </p>
-            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Contact Us</a>
+          <span class="cs-topper">Contact us</span>
+          <h2 class="cs-title">Contact Us for Your Construction Needs</h2>
+          <p class="cs-text">
+            Fill out our construction contact form and let us know about your
+            project needs. Our team of experts will get back to you within
+            24-48 hours to discuss your project details and provide you with a
+            customized quote.
+          </p>
         </div>
-        <!-- Right Section -->
+      </div>
     </div>
-</section>
-                                
+    <picture class="cs-background">
+      <!--Mobile Image-->
+      <source
+        media="(max-width: 600px)"
+        srcset="
+          https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg
+        "
+      />
+      <!--Tablet and above Image-->
+      <source
+        media="(min-width: 601px)"
+        srcset="
+          https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg
+        "
+      />
+      <img
+        loading="lazy"
+        decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg"
+        alt="waves"
+        width="960"
+        height="839"
+      />
+    </picture>
+  </section>                   
