@@ -85,6 +85,10 @@
     <!--                 Navigation                   -->
     <!-- ============================================ -->
 
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
     <header id="cs-navigation">
       <!--Nav Logo-->
       <a href="" class="cs-logo" aria-label="back to home">
@@ -113,7 +117,7 @@
           </picture>
           <div class="cs-flex">
             <span class="cs-header">Call Us Now</span>
-            <a href="tel:555-555-0234" class="cs-link">(555) 555-0234</a>
+            <a href="tel:555-555-0234" class="cs-link">07355 864994 </a>
           </div>
         </li>
         <li class="cs-item">
@@ -130,7 +134,9 @@
           </picture>
           <div class="cs-flex">
             <span class="cs-header">Send A Message</span>
-            <a href="mailto:Info@email.com" class="cs-link">Info@email.com</a>
+            <a href="mailto:Info@email.com" class="cs-link"
+              >LLCherts1@gmail.com
+            </a>
           </div>
         </li>
         <li class="cs-item cs-remove">
@@ -147,7 +153,7 @@
           </picture>
           <div class="cs-flex">
             <span class="cs-header">Visit Us At</span>
-            <a href="" class="cs-link">2492 Fake Rd.</a>
+            <a href="" class="cs-link">London </a>
           </div>
         </li>
       </ul>
@@ -339,12 +345,12 @@
                                 <a href="" class="cs-li-link"> Aesthetics </a>
                               </li>
                               <li class="cs-li">
-                                <a href="" class="cs-li-link"> FAQ </a>
+                                <a href="#faq-1237" class="cs-li-link"> FAQ </a>
                               </li>
                             </ul>
                           </div>
                         </nav>
-                        <a href="" class="cs-button-solid cs-nav-button"
+                        <a href="/contact" class="cs-button-solid cs-nav-button"
                           >Contact Us</a
                         >
                         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
@@ -375,55 +381,54 @@
       </button> -->
       </div>
     </header>
+    
     <main id="main">{% block body %}{% endblock %}</main>
     {% include "components/footer.html" %}
   </body>
   <script>
-          var CSbody = document.querySelector("body");
-      const CSnavbarMenu = document.querySelector("#cs-navigation");
-      const CShamburgerMenu = document.querySelector(
-        "#cs-navigation .cs-toggle"
-      );
+    var CSbody = document.querySelector("body");
+    const CSnavbarMenu = document.querySelector("#cs-navigation");
+    const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
 
-      CShamburgerMenu.addEventListener("click", function () {
-        CShamburgerMenu.classList.toggle("cs-active");
-        CSnavbarMenu.classList.toggle("cs-active");
-        CSbody.classList.toggle("cs-open");
-        // run the function to check the aria-expanded value
-        ariaExpanded();
-      });
+    CShamburgerMenu.addEventListener("click", function () {
+      CShamburgerMenu.classList.toggle("cs-active");
+      CSnavbarMenu.classList.toggle("cs-active");
+      CSbody.classList.toggle("cs-open");
+      // run the function to check the aria-expanded value
+      ariaExpanded();
+    });
 
-      // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
-      function ariaExpanded() {
-        const csUL = document.querySelector("#cs-expanded");
-        const csExpanded = csUL.getAttribute("aria-expanded");
+    // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
+    function ariaExpanded() {
+      const csUL = document.querySelector("#cs-expanded");
+      const csExpanded = csUL.getAttribute("aria-expanded");
 
-        if (csExpanded === "false") {
-          csUL.setAttribute("aria-expanded", "true");
-        } else {
-          csUL.setAttribute("aria-expanded", "false");
-        }
+      if (csExpanded === "false") {
+        csUL.setAttribute("aria-expanded", "true");
+      } else {
+        csUL.setAttribute("aria-expanded", "false");
       }
+    }
 
-      // mobile nav toggle code
-      const dropDowns = Array.from(
-        document.querySelectorAll("#cs-navigation .cs-dropdown")
-      );
-      for (const item of dropDowns) {
-        const onClick = () => {
-          item.classList.toggle("cs-active");
-        };
-        item.addEventListener("click", onClick);
+    // mobile nav toggle code
+    const dropDowns = Array.from(
+      document.querySelectorAll("#cs-navigation .cs-dropdown")
+    );
+    for (const item of dropDowns) {
+      const onClick = () => {
+        item.classList.toggle("cs-active");
+      };
+      item.addEventListener("click", onClick);
+    }
+
+    // after scrolling down 100px, add .scroll class to the #cs-navigation
+    document.addEventListener("scroll", (e) => {
+      const scroll = document.documentElement.scrollTop;
+      if (scroll >= 100) {
+        document.querySelector("#cs-navigation").classList.add("scroll");
+      } else {
+        document.querySelector("#cs-navigation").classList.remove("scroll");
       }
-
-      // after scrolling down 100px, add .scroll class to the #cs-navigation
-      document.addEventListener("scroll", (e) => {
-        const scroll = document.documentElement.scrollTop;
-        if (scroll >= 100) {
-          document.querySelector("#cs-navigation").classList.add("scroll");
-        } else {
-          document.querySelector("#cs-navigation").classList.remove("scroll");
-        }
-      });
+    });
   </script>
 </html>
