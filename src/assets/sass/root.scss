@@ -7,19 +7,19 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
     // Website colors
-    :root {
-        --primary: #2e8b57;        /* Sea Green */
-        --primaryLight: #3cb371;   /* Medium Sea Green */
-        --secondary: #8fbc8f;      /* Dark Sea Green */
-        --secondaryLight: #98fb98; /* Pale Green */
-        --headerColor: #006400;    /* Dark Green */
-        --bodyTextColor: #228b22;  /* Forest Green */
-        --bodyTextColorWhite: #ffffff; /* White */
-        --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-        --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-        --bodyFontSize: 1rem;
-        --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-    }
+  :root {
+    --primary: #f39c12; /* Construction Yellow/Orange */
+    --primaryLight: #f7b731; /* Lighter Construction Yellow */
+    --secondary: #34495e; /* Dark Slate Blue */
+    --secondaryLight: #5d6d7e; /* Lighter Slate Blue */
+    --headerColor: #2c3e50; /* Dark Blue-Grey */
+    --bodyTextColor: #2f3640; /* Dark Grey */
+    --bodyTextColorWhite: #ffffff; /* White */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  }
 
     // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
     .cs-topper {

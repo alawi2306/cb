@@ -59,13 +59,13 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
-    color: #ffffff;
+    color: #000;
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
   }
   .cs-button-solid:hover {
-    color: #000;
+    color: #fff;
   }
   .cs-button-solid:hover:before {
     width: 100%;
@@ -193,7 +193,6 @@
     font-size: 0.55vw;
   }
 }
-
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
 <--- -------------------------- -*/
